@@ -1,0 +1,254 @@
+[
+  {
+    "name": "Flutter",
+    "courses": "17",
+    "image": "assets/images/Flutter.jpg",
+    "Details": [
+      {
+        "id": "1",
+        "duration": "8:18",
+        "title": "Introduction to Flutter",
+        "videoUrl":
+            "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+      },
+      {
+        "id": "2",
+        "duration": "12:18",
+        "title": "Setting Up Flutter Environment",
+        "videoUrl":
+            "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4"
+      },
+      {
+        "id": "3",
+        "duration": "8:18",
+        "title": "Your First Flutter App",
+        "videoUrl":
+            "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4"
+      },
+      {
+        "id": "4",
+        "duration": "8:18",
+        "title": "Building User Interfaces",
+        "videoUrl":
+            "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4"
+      },
+      {
+        "id": "5",
+        "duration": "8:18",
+        "title": "State Management",
+        "videoUrl":
+            "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+      },
+      {
+        "id": "6",
+        "duration": "8:18",
+        "title": "Navigation in Flutter",
+        "videoUrl":
+            "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4"
+      },
+      {
+        "id": "7",
+        "duration": "8:18",
+        "title": "Flutter Widgets",
+        "videoUrl":
+            "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4"
+      },
+      {
+        "id": "8",
+        "duration": "12:18",
+        "title": "Flutter Animation",
+        "videoUrl":
+            "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4"
+      }
+    ]
+  },
+  {
+    "name": "UX Design",
+    "courses": "25",
+    "image": "assets/images/UX.jpg",
+    "Details": [
+      {
+        "id": "1",
+        "duration": "8:18",
+        "title": "Introduction to UX Design",
+        "videoUrl":
+            "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+      },
+      {
+        "id": "2",
+        "duration": "12:18",
+        "title": "Understanding User Needs",
+        "videoUrl":
+            "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4"
+      },
+      {
+        "id": "3",
+        "duration": "8:18",
+        "title": "User Research Techniques",
+        "videoUrl":
+            "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4"
+      },
+      {
+        "id": "4",
+        "duration": "8:18",
+        "title": "Creating User Personas",
+        "videoUrl":
+            "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4"
+      },
+      {
+        "id": "5",
+        "duration": "8:18",
+        "title": "Information Architecture",
+        "videoUrl":
+            "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+      },
+      {
+        "id": "6",
+        "duration": "8:18",
+        "title": "Wire framing and Prototyping",
+        "videoUrl":
+            "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4"
+      },
+      {
+        "id": "7",
+        "duration": "8:18",
+        "title": "Usability Testing",
+        "videoUrl":
+            "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4"
+      },
+      {
+        "id": "8",
+        "duration": "12:18",
+        "title": "Visual Design Principles",
+        "videoUrl":
+            "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4"
+      }
+    ]
+  },
+  {
+    "name": "Dart",
+    "courses": "13",
+    "image": "assets/images/Dart.png",
+    "Details": [
+      {
+        "id": "1",
+        "duration": "8:18",
+        "title": "Introduction to Dart",
+        "videoUrl":
+            "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+      },
+      {
+        "id": "2",
+        "duration": "12:18",
+        "title": "Dart Syntax and Basics",
+        "videoUrl":
+            "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4"
+      },
+      {
+        "id": "3",
+        "duration": "8:18",
+        "title": "Functions and Control Flow",
+        "videoUrl":
+            "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4"
+      },
+      {
+        "id": "4",
+        "duration": "8:18",
+        "title": "Asynchronous Programming",
+        "videoUrl":
+            "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4"
+      },
+      {
+        "id": "5",
+        "duration": "8:18",
+        "title": "Dart Web Development",
+        "videoUrl":
+            "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+      },
+      {
+        "id": "6",
+        "duration": "8:18",
+        "title": "Mobile App Development with Flutter",
+        "videoUrl":
+            "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4"
+      },
+      {
+        "id": "7",
+        "duration": "8:18",
+        "title": "Dart Testing and Debugging",
+        "videoUrl":
+            "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4"
+      },
+      {
+        "id": "8",
+        "duration": "12:18",
+        "title": "Dart Packages and Libraries",
+        "videoUrl":
+            "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4"
+      }
+    ]
+  },
+  {
+    "name": "Python",
+    "courses": "17",
+    "image": "assets/images/Python.jpg",
+    "Details": [
+      {
+        "id": "1",
+        "duration": "8:18",
+        "title": "Introduction to Python",
+        "videoUrl":
+            "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+      },
+      {
+        "id": "2",
+        "duration": "12:18",
+        "title": "Python Syntax and Basics",
+        "videoUrl":
+            "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4"
+      },
+      {
+        "id": "3",
+        "duration": "8:18",
+        "title": "Control Flow and Functions",
+        "videoUrl":
+            "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4"
+      },
+      {
+        "id": "4",
+        "duration": "8:18",
+        "title": "Data Types and Data Structures",
+        "videoUrl":
+            "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4"
+      },
+      {
+        "id": "5",
+        "duration": "8:18",
+        "title": "Object-Oriented Programming in Python",
+        "videoUrl":
+            "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+      },
+      {
+        "id": "6",
+        "duration": "8:18",
+        "title": "Web Development with Flask",
+        "videoUrl":
+            "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4"
+      },
+      {
+        "id": "7",
+        "duration": "8:18",
+        "title": "Data Science with Python",
+        "videoUrl":
+            "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4"
+      },
+      {
+        "id": "8",
+        "duration": "12:18",
+        "title": "Testing and Debugging in Python",
+        "videoUrl":
+            "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4"
+      }
+    ]
+  }
+]

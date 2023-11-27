@@ -25,7 +25,7 @@ const titleTextStyle = TextStyle(
 );
 
 const subtitleTextSyule = TextStyle(
-  fontSize: 18,
-  color: TextColor,
+  fontSize: 12,
+  color: Colors.grey,
   // fontWeight: FontWeight.bold,
 );
