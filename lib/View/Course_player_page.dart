@@ -100,104 +100,108 @@ class _CoursePlayerPageState extends State<CoursePlayerPage> {
                 icon: const Icon(Icons.star))
           ],
         ),
-        body: Container(
-          width: double.infinity,
-          decoration: BoxDecoration(
-            image: DecorationImage(
-              image: AssetImage(course.image),
-              alignment: Alignment.topRight,
-              fit: BoxFit.fitWidth,
+        body: SingleChildScrollView(
+          child: Container(
+            height: Get.height,
+            width: Get.width,
+            decoration: BoxDecoration(
+              image: DecorationImage(
+                image: AssetImage(course.image),
+                alignment: Alignment.topRight,
+                fit: BoxFit.fitWidth,
+              ),
             ),
-          ),
-          child: Column(
-            children: [
-              Obx(() => selectedCourseController.isPlaying.value
-                  ? Padding(
-                      padding: const EdgeInsets.symmetric(vertical: 80),
-                      child: Container(
-                        margin: const EdgeInsets.only(left: 30),
-                        height: 50,
-                        width: 50,
-                        decoration: const BoxDecoration(
-                          shape: BoxShape.circle,
-                          color: BlueColor,
-                        ),
-                        child: const Icon(
-                          Icons.play_arrow,
-                          color: Colors.white,
-                          size: 40,
-                        ),
-                      ),
-                    )
-                  : videoView(context)),
-              Expanded(
-                child: Container(
-                  padding: const EdgeInsets.all(15),
-                  width: Get.width,
-                  decoration: const BoxDecoration(
-                    color: Colors.white,
-                  ),
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Text(
-                        "${course.name} Complete Course",
-                        style: titleTextStyle,
-                      ),
-                      const Text(
-                        "Enhance your knowledge through learning",
-                        style: TextStyle(
-                            fontSize: 16,
-                            color: Color.fromARGB(255, 81, 80, 80)),
-                      ),
-                      Text(
-                        "${course.details.length} videos",
-                        style: const TextStyle(color: Colors.grey),
-                      ),
-                      const SizedBox(
-                        height: 20,
-                      ),
-                      Container(
-                        height: 40,
-                        width: 150,
-                        decoration: BoxDecoration(
+            child: Column(
+              children: [
+                Obx(() => selectedCourseController.isPlaying.value
+                    ? Padding(
+                        padding:
+                            EdgeInsets.symmetric(vertical: Get.height * .1),
+                        child: Container(
+                          margin: const EdgeInsets.only(left: 30),
+                          height: 50,
+                          width: 50,
+                          decoration: const BoxDecoration(
+                            shape: BoxShape.circle,
                             color: BlueColor,
-                            borderRadius: BorderRadius.circular(10)),
-                        child: const Center(
-                          child: Text("PlayList",
-                              style:
-                                  TextStyle(fontSize: 16, color: Colors.white)),
+                          ),
+                          child: const Icon(
+                            Icons.play_arrow,
+                            color: Colors.white,
+                            size: 40,
+                          ),
                         ),
-                      ),
-                      const SizedBox(
-                        height: 20,
-                      ),
-                      Expanded(
-                        child: ListView.builder(
-                          itemCount: course.details.length,
-                          itemBuilder: (_, index) {
-                            CourseDetails details = course.details[index];
-                            return GestureDetector(
-                              onTap: () {
-                                selectedCourseController.isPlaying.value =
-                                    false;
-                                initializeVideo(index, details.videoUrl);
-                              },
-                              child: CourseContent(
-                                number: "0${details.id}",
-                                duration: details.duration,
-                                title: details.title,
-                                isDone: true,
-                              ),
-                            );
-                          },
+                      )
+                    : videoView(context)),
+                Expanded(
+                  child: Container(
+                    padding: const EdgeInsets.all(15),
+                    width: Get.width,
+                    decoration: const BoxDecoration(
+                      color: Colors.white,
+                    ),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          "${course.name} Complete Course",
+                          style: titleTextStyle,
                         ),
-                      ),
-                    ],
+                        const Text(
+                          "Enhance your knowledge through learning",
+                          style: TextStyle(
+                              fontSize: 16,
+                              color: Color.fromARGB(255, 81, 80, 80)),
+                        ),
+                        Text(
+                          "${course.details.length} videos",
+                          style: const TextStyle(color: Colors.grey),
+                        ),
+                        const SizedBox(
+                          height: 20,
+                        ),
+                        Container(
+                          height: 40,
+                          width: 150,
+                          decoration: BoxDecoration(
+                              color: BlueColor,
+                              borderRadius: BorderRadius.circular(10)),
+                          child: const Center(
+                            child: Text("PlayList",
+                                style: TextStyle(
+                                    fontSize: 16, color: Colors.white)),
+                          ),
+                        ),
+                        const SizedBox(
+                          height: 20,
+                        ),
+                        Expanded(
+                          child: ListView.builder(
+                            itemCount: course.details.length,
+                            itemBuilder: (_, index) {
+                              CourseDetails details = course.details[index];
+                              return GestureDetector(
+                                onTap: () {
+                                  selectedCourseController.isPlaying.value =
+                                      false;
+                                  initializeVideo(index, details.videoUrl);
+                                },
+                                child: CourseContent(
+                                  number: "0${details.id}",
+                                  duration: details.duration,
+                                  title: details.title,
+                                  isDone: true,
+                                ),
+                              );
+                            },
+                          ),
+                        ),
+                      ],
+                    ),
                   ),
                 ),
-              ),
-            ],
+              ],
+            ),
           ),
         ),
       ),
@@ -266,7 +270,7 @@ class _CoursePlayerPageState extends State<CoursePlayerPage> {
                               style: ElevatedButton.styleFrom(
                                   backgroundColor: BlueColor),
                               onPressed: () {
-                                Get.offAll(()=>const Dashboard());
+                                Get.offAll(() => const Dashboard());
                               },
                               child: const Text(
                                 "Claim",

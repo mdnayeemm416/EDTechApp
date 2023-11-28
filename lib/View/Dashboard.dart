@@ -84,7 +84,8 @@ class _DashboardState extends State<Dashboard> {
                             return Card(
                               child: Container(
                                 decoration: BoxDecoration(
-                                    color: const Color.fromARGB(255, 234, 243, 247),
+                                    color: const Color.fromARGB(
+                                        255, 234, 243, 247),
                                     borderRadius: BorderRadius.circular(16),
                                     boxShadow: const [
                                       BoxShadow(
@@ -131,12 +132,13 @@ class _DashboardState extends State<Dashboard> {
                                               onPressed: () {
                                                 dashboardController
                                                     .setSelectedCourse(course);
-                                                Get.to(
-                                                    () => const CoursePlayerPage());
+                                                Get.to(() =>
+                                                    const CoursePlayerPage());
                                               },
                                               child: Text(
                                                 "Continue Course",
                                                 style: TextStyle(
+                                                    color: Colors.black,
                                                     fontSize:
                                                         Get.height * .016),
                                               ))
