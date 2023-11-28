@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 
 class CourseContent extends StatelessWidget {
   final String number;
-  final double duration;
+  final String duration;
   final String title;
   final bool isDone;
 
@@ -27,37 +27,37 @@ class CourseContent extends StatelessWidget {
               fontSize: 32,
             ),
           ),
-          SizedBox(width: 10),
+          const SizedBox(width: 10),
           RichText(
             text: TextSpan(
               children: [
                 TextSpan(
-                  text: "$duration mins\n",
-                  style: TextStyle(
-                    color: TextColor.withOpacity(.5),
-                    fontSize: 18,
+                  text: "$title\n",
+                  style: const TextStyle(
+                    color: Colors.black,
+                    fontSize: 14,
+                    fontWeight: FontWeight.w400,
                   ),
                 ),
                 TextSpan(
-                  text: title,
+                  text: "$duration mins",
                   style: subtitleTextSyule.copyWith(
-                    fontWeight: FontWeight.w600,
                     height: 1.5,
                   ),
                 ),
               ],
             ),
           ),
-          Spacer(),
+          const Spacer(),
           Container(
-            margin: EdgeInsets.only(left: 30),
+            margin: const EdgeInsets.only(left: 30),
             height: 40,
             width: 40,
             decoration: BoxDecoration(
               shape: BoxShape.circle,
               color: BlueColor.withOpacity(isDone ? 1 : .5),
             ),
-            child: Icon(Icons.play_arrow, color: Colors.white),
+            child: const Icon(Icons.play_arrow, color: Colors.white),
           )
         ],
       ),
